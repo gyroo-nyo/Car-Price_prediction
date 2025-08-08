@@ -1,93 +1,84 @@
-🚗 Car Price Prediction
-This project predicts the price of a car based on features such as Year, Mileage, Fuel Type, Transmission, and Engine Size.
-It uses Machine Learning techniques to train and evaluate a predictive model, helping users estimate car prices effectively.
+# 🚗 Car Price Prediction
 
-📌 Features
-Data Cleaning & Preprocessing – Handling categorical and numerical features
+This project predicts the price of a car based on features such as **year**, **mileage**, **fuel type**, and more, using **Machine Learning**.
 
-Feature Encoding – Converting text data like "Fuel Type" and "Transmission" into numeric values
+## 📌 Features
+- Data cleaning and preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Machine Learning model training  
+- Model evaluation using R² score  
+- Visualization of actual vs predicted prices  
 
-Model Training – Uses Linear Regression with hyperparameter tuning via GridSearchCV
+## 🛠 Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/gyroo-nyo/Car-Price_prediction.git
 
-Model Evaluation – Performance measured using the R² score
+2. Navigate into the project directory:
 
-Visualization – Plot of Actual vs Predicted prices for model validation
+   bash
+   Copy
+   Edit
+   cd Car-Price_prediction
 
-📂 Dataset
-The dataset (Car_Price_Prediction.csv) contains columns:
+3. Install required dependencies:
 
-Year – Manufacturing year of the car
+   bash
+   Copy
+   Edit
+   pip install -r requirements.txt
 
-Fuel Type – Petrol, Diesel, Electric
+# 📂 Dataset
+The dataset Car_Price_Prediction.csv contains:
 
-Transmission – Manual, Automatic
+Year – Year of manufacture
 
-Engine Size – Size of the car's engine (in liters)
+Fuel Type – Petrol, Diesel, Electric (encoded as numbers)
 
-Mileage – Kilometers driven
+Transmission – Manual or Automatic (encoded)
 
-Price – Target variable (in currency units)
+Engine Size – Size in liters
 
-🛠 Installation & Usage
-Clone the repository
+Mileage – Distance driven in miles
 
-bash
-Copy
-Edit
-git clone https://github.com/gyroo-nyo/Car-Price_prediction.git
-cd Car-Price_prediction
-Install dependencies
+Price – Target variable to predict
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the script
+# ⚙️ Model Workflow
+Data Preprocessing – Handling categorical features by mapping to numerical values.
 
-bash
-Copy
-Edit
-python car_price_prediction.py
-📊 Example Output
-After running the model:
+Feature Selection – Selecting Year, Fuel Type, Transmission, Engine Size, and Mileage.
 
-Training R² score: ~0.85
+Model Selection – Using LinearRegression with hyperparameter tuning via GridSearchCV.
 
-Test R² score: ~0.83
+Evaluation – R² score for training and testing datasets.
 
-Visualization:
-The script generates a scatter plot comparing actual vs predicted car prices with a red dashed line representing perfect predictions.
+Visualization – Scatter plot of actual vs predicted prices.
 
-🔍 Model Details
-Algorithm: Linear Regression
+# 📊 Results
+Best Parameters: Retrieved using Grid Search.
 
-Hyperparameters Tuned:
+Training Score (R²): ~0.xx
 
-fit_intercept: True / False
+Testing Score (R²): ~0.xx
 
-positive: True / False
+# 📈 Visualization
+The following chart compares actual vs predicted prices:
 
-Cross-Validation: 5-fold CV via GridSearchCV
 
-Scaling: StandardScaler (optional in pipeline)
+Red dashed line = perfect prediction.
 
-📈 Visualization
-The output includes a plot:
+# 🧠 Technologies Used
+Python
 
-X-axis: Actual Price
+Pandas & NumPy
 
-Y-axis: Predicted Price
+Scikit-learn
 
-Line: Red dashed line → perfect prediction line
+Matplotlib
 
-📌 Future Improvements
-Try advanced models like Random Forest or XGBoost for better accuracy
+# 🚀 Future Improvements
+Try advanced models like Random Forest, XGBoost.
 
-Add feature importance analysis
+Perform deeper feature engineering.
 
-Deploy the model using Streamlit or Flask for a web interface
-
-Use more extensive datasets for improved generalization
-
-🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+Deploy model as a web app using Streamlit or Flask.
