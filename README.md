@@ -54,15 +54,11 @@ Evaluation – R² score for training and testing datasets.
 
 Visualization – Scatter plot of actual vs predicted prices.
 
-# 📊 Results
-Best Parameters: Retrieved using Grid Search.
 
-Training Score (R²): ~0.xx
-
-Testing Score (R²): ~0.xx
 
 # 📈 Visualization
 The following chart compares actual vs predicted prices:
+![alt text](image.png)
 
 
 Red dashed line = perfect prediction.
