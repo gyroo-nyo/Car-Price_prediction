@@ -56,12 +56,6 @@ Visualization – Scatter plot of actual vs predicted prices.
 
 
 
-# 📈 Visualization
-The following chart compares actual vs predicted prices:
-![alt text](image.png)
-
-
-Red dashed line = perfect prediction.
 
 # 🧠 Technologies Used
 Python
