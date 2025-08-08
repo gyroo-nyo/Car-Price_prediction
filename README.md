@@ -11,21 +11,17 @@ This project predicts the price of a car based on features such as **year**, **m
 
 ## 🛠 Installation
 1. Clone this repository:
-   ```bash
+   
    git clone https://github.com/gyroo-nyo/Car-Price_prediction.git
 
 2. Navigate into the project directory:
 
-   bash
-   Copy
-   Edit
+  
    cd Car-Price_prediction
 
 3. Install required dependencies:
 
-   bash
-   Copy
-   Edit
+   
    pip install -r requirements.txt
 
 # 📂 Dataset
